@@ -8,7 +8,7 @@ Una palabra será clasificada como de interés si su longitud supera el umbral e
 public class LongCaracteres implements Metodo {
 
     // atributos
-    private int umbral;
+    private int umbral; //para que quiere este umbral? acaso no es un atributo del detector?
 
     // Constructor
     public LongCaracteres(int umbral) {
@@ -17,7 +17,7 @@ public class LongCaracteres implements Metodo {
 
 
     @Override
-    public boolean interes(String palabra, int threshold) {
+    public boolean interes(String palabra, int threshold) { //cual es el sentido de recibir el threshold si no lo utiliza?
         return palabra.length() > umbral;
     }
 }
