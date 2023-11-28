@@ -8,7 +8,7 @@ public class CantidadLetras implements Metodo {
 
     //Atributos
     private char letra;
-    private int umbral;
+    private int umbral; //idem longitud de caracteres. A quien corresponde?
 
     //Constructor
     public CantidadLetras(char letra, int umbral) {
@@ -17,7 +17,7 @@ public class CantidadLetras implements Metodo {
     }
 
     @Override
-    public boolean interes(String palabra, int threshold) {
+    public boolean interes(String palabra, int threshold) { //idem long. Para qué recibe un int como parámetro?
         int contador = 0;
         for (int i = 0; i < palabra.length(); i++) {
             if (palabra.charAt(i) == letra) {
