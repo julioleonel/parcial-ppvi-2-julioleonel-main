@@ -8,7 +8,7 @@ al método de detección a utilizar.
 public class Detector {
 
     //Atributos
-    private int threshold;
+    private int threshold; //faltaría un setter para modificarlo en tiempo de ejecución
     private Metodo metodo;
 
     //Constructor
